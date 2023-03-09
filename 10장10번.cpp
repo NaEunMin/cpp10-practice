@@ -27,7 +27,6 @@ int main()
 {
     vector<Nation> v;
     int menu;
-    int check;
     string nation;
     string capital;
     
@@ -39,6 +38,7 @@ int main()
         cout << "현재 " << v.size() <<"개의 나라가 입력되어 있습니다." << endl;
         cout << "나라와 수도를 입력하세요(no no 이면 입력 끝)" << endl;
         while(true){
+        int size = 0;
         cout << v.size()+1 << ">>";
         cin >> nation >> capital;
         if(nation=="no" && capital=="no") break;
